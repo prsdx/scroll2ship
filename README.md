@@ -32,4 +32,4 @@ JWT-based authentication, Role-based access control, RESTful API design, Image u
 ## 📞 Support
 ## 🙏 Acknowledgments
 ---
-Built with ❤️ by the Heymun, Mithul, Shubham
+Built with ❤️ by @PareekHeymun, @mithulcrafts, @prsdx
