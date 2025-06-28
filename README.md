@@ -13,9 +13,11 @@ This is a comprehensive ecommerce solution designed to provide:
 
 ## 🛠️ Tech Stack
 Will be updated as the project grows
+##
 ---
 ## Project Architecture
 Will be updated as the project grows
+##
 ---
 ### Customer Features
 Customer Features: User registration and authentication, Product Browse with search and filters, Shopping cart and wishlist, Secure checkout process, Order tracking and history, Product reviews and ratings, Personalized recommendations, Mobile-responsive design
@@ -23,6 +25,7 @@ Customer Features: User registration and authentication, Product Browse with sea
 Admin dashboard with analytics, Product management (CRUD operations), Order management and status updates, User management and role assignment, Inventory tracking and alerts, Sales reports and data export, Store customization and branding
 ### Technical Features
 JWT-based authentication, Role-based access control, RESTful API design, Image upload and optimization, Payment gateway integration, Email notifications, Data export (CSV/PDF), Real-time analytics, Security best practices
+###
 ---
 ### Getting Started
 ### Running the Application
