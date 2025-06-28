@@ -1,0 +1,30 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "e-commerce web application",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PareekHeymun/Ecommerce-App.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "css",
+    "html",
+    "mongodb",
+    "reactjs",
+    "chartjs",
+    "ecommerce-website",
+    "mongodb-atlas"
+  ],
+  "author": "Heymun Pareek, Mithul Nama, Shubham Prasad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PareekHeymun/Ecommerce-App/issues"
+  },
+  "homepage": "https://github.com/PareekHeymun/Ecommerce-App#readme"
+}
