@@ -2,7 +2,7 @@
   "name": "app",
   "version": "1.0.0",
   "description": "e-commerce web application",
-  "main": "script.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
