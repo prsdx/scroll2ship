@@ -24,8 +24,8 @@ const userSchema = new Schema({
  * Export the user collection using module.exports
  */
 
-module.exports = mongoose.model('user', userSchema);
 userSchema.pre('save', function(next) {
     //bcrypt for password hashing
     next();
 });
+module.exports = mongoose.model('user', userSchema);
