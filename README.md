@@ -29,6 +29,8 @@ Admin dashboard with analytics, Product management (CRUD operations), Order mana
 JWT-based authentication, Role-based access control, RESTful API design, Image upload and optimization, Payment gateway integration, Email notifications, Data export (CSV/PDF), Real-time analytics, Security best practices
 ###
 ---
+# Security Vulnerabilities
+If you think that you have found a security issue in Scroll2Ship, please do not use the issue tracker and do not post it publicly. Instead, all security issues must be sent to mailto:scroll2ship@gmail.com
 ### Getting Started
 ### Running the Application
 ### Team Members
