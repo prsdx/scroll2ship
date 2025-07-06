@@ -1,7 +1,10 @@
 const express = require('express');
 const router = express.Router(); //express router is just for auth routes
 const user = require('../models/user.model.js');
+const jwt = require('jsonwebtoken');
+require('dotenv').config();
 
+//signup is the same as registering a user
 router.post('/signup', async function (req, res){
     console.log(req.body);
     try{
@@ -30,6 +33,41 @@ router.post('/signup', async function (req, res){
         // console.log(err);
         return res.status(500).send('Server Error');
     }
+})
+//first we will hash password and save that hash
+//next we will hash the username also and save it as a hash
+
+router.post('/signin', async function(req, res){
+    console.log(req.body);
+    const {email, password} = req.body; //username and password then check for forgot email and forgot password
+
+    try
+    {
+        const getUser = await user.findOne({email}); //sanitize bro
+        if(!getUser){
+            res.status(400).json({msg: 'User not found, please signup to register as a user'});
+        }
+
+        const isMatch = await getUser.checkPassword(password);
+        if(!isMatch){
+            return res.status(400).json({msg: 'Incorrect email or password'}); //confuse the user whether his username is incorrect or password :)
+        }
+        const payload_object = {
+            id: user.name,
+            role: user.role
+        }
+        const secret_key = process.env.JWT_SECRET;
+        const options_object = {expiresIn : '1h'};
+
+        const GET_TOKEN = jwt.sign(payload_object, secret_key, options_object);
+        
+        return res.status(200).json({msg: 'Login Success', token: GET_TOKEN});
+    }
+    catch(err){
+        console.log(err); //don't show error otherwise attacker can know which attack to use lol
+        return res.status(500).send('Server error'); //we need to send server error message on our side, so please keep this in logs
+    }
+
 })
 
 module.exports = router;
